@@ -1,0 +1,105 @@
+.AddTodoBack{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.339);
+}
+.AddTodoHolder{
+    position: absolute;
+    width: 40%;
+    min-height: 60%;
+    background-color: white;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 987987;
+    padding: 2%;
+}
+.AddTodoFormHead{
+font-family: var(--font-body);
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+.FormInputHead{
+    font-family: var(--font-body);
+    color: rgba(0, 0, 0, 0.619);
+    padding-bottom: 0.3rem;
+}
+.FormInput{
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 9px 13px;
+        margin-bottom: 0.6rem;
+        width: 90%;
+        height: 38px;
+    
+        /* white */
+    
+        background: #FFFFFF;
+        /* gray/300 */
+    
+        border: 1px solid #D1D5DB;
+        /* shadow/sm */
+    
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+}
+.TodoFormButton{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px 10px;
+    border-radius: 2px;
+    font-family: var(--font-body);
+    width: fit-content;
+    border: 1px solid rgba(0, 0, 0, 0.298);
+    color: #656565;
+    border-radius: 10px;
+    width: 25%;
+}
+.TodoFormButton-selected{
+    border: none;
+    outline: none;
+    background-color: #4338CA;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 5px;
+    font-family: var(--font-body);
+    width: 25%;
+}
+.ChoiceBox{
+    display: flex;
+    gap: 1rem;
+}
+.AddButton{
+    border: none;
+    outline: none;
+    background-color: #4338CA;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 5px;
+    font-family: var(--font-body);
+    width: 45%;
+}
+.CancelButton{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px 10px;
+    border-radius: 2px;
+    font-family: var(--font-body);
+    width: fit-content;
+    border: 1px solid rgba(0, 0, 0, 0.298);
+    color: #656565;
+    border-radius: 10px;
+    width: 45%;
+}
+.AddTaskFormButtons{
+    display: flex;
+    gap: 2rem;
+    padding-top: 10%;    
+}

@@ -1,0 +1,116 @@
+.Sidebar{
+    width: 20%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 2rem;
+    /* overflow-y: scroll;
+    height: 80vh; */
+    /* border-right: 2px solid #E5E7EB; */
+}
+@media screen and (max-width:1150px) {
+    .Sidebar{
+        width: 40% !important;
+    }
+}
+@media screen and (max-width:750px) {
+    .Sidebar {
+        width: 60% !important;
+    }
+}
+@media screen and (min-width:450px) {
+    .Sidebar{
+        height: 80vh;
+        overflow-y: scroll;
+    }
+    .Sidebar::-webkit-scrollbar {
+            width: 8px;
+            padding-right: 2px;
+        }
+    
+        .Sidebar::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+    
+        .Sidebar::-webkit-scrollbar-thumb {
+            background-color: var(--gray3);
+            border: 1px solid white;
+            border-radius: 12px;
+        }
+}
+@media screen and (max-width:450px) {
+    .Sidebar {
+        width: 100% !important;
+        flex-direction: row !important;
+        overflow-x: scroll;
+        position: fixed;
+        z-index: 99999;
+        top: 0%;
+        background-color: white;
+    }
+        .Sidebar::-webkit-scrollbar {
+            width: 2px;
+            padding-right: 2px;
+        }
+    
+        .Sidebar::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+    
+        .Sidebar::-webkit-scrollbar-thumb {
+            background-color: var(--gray3);
+            border: 5px solid white;
+            border-radius: 12px;
+        }
+    .sidebarIcon{
+        display: none;
+        position: absolute;
+    }
+    .content{
+        gap: 2.1rem !important;
+        justify-content: center !important;
+        align-items: center !important;
+        border-bottom: 1px solid black;
+    }
+    .contentSelected{
+    gap: 2.1rem !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+.content{
+    padding: 10px;
+    font-family: var(--font-body);
+    color: #374151;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.contentSelected{
+    padding: 10px;
+    font-family: var(--font-body);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #4338CA;
+    border-radius: 10px;
+    color: white;
+}
+.smline{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    background-color: #E5E7EB;
+    height: 1px;
+}
+.contentText{
+    
+    width: 30%;
+    align-items:flex-start;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+}
